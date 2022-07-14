@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <table>
+            <input type="number" id="a" placeholder="Nhập số tiền ban đầu">
+            <input type="number" id="b" placeholder="Nhập số tháng vay">
+            <input type="number" id="c" placeholder="Nhập lãi suất vay">
+            <button onclick="check()">Thành tiền</button>
+            <h3>Tính lãi suất ngân hàng:</h3>
+            <div id="result">Số tiền</div>
+        </table>
+        <script>
+            function check(){
+                let a= document.getElementById("a").value;
+                let b= document.getElementById("b").value;
+                let c= document.getElementById("c").value;
+                result = a*b*c;
+                document.getElementById("result").innerHTML= result +""+ "VNĐ";
+            }
+        </script>
+    </table>
+</body>
+</html>
